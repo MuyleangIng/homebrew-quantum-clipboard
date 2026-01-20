@@ -1,25 +1,16 @@
-class QuantumClipboard < Formula
-  desc "Open-source offline clipboard manager for macOS"
-  homepage "https://github.com/MuyleangIng/Quantum-Clipboard-Copy"
-  url "https://github.com/MuyleangIng/Quantum-Clipboard-Copy/releases/download/v0.1.0/Quantum-Clipboard.app.zip"
-  sha256 "47360a66817ae3063b1356d4867355997c91c2d2eab325a7ebeb67b188db8735"
+cask "quantum-clipboard" do
   version "0.1.0"
+  sha256 "47360a66817ae3063b1356d4867355997c91c2d2eab325a7ebeb67b188db8735"
 
-  depends_on macos: :monterey
+  url "https://github.com/MuyleangIng/Quantum-Clipboard-Copy/releases/download/#{version}/Quantum-Clipboard.app.zip"
+  name "Quantum Clipboard"
+  desc "Open-source clipboard manager for macOS (text + image, offline-first)"
+  homepage "https://github.com/MuyleangIng/Quantum-Clipboard-Copy"
 
-  def install
-    prefix.install "Quantum Clipboard.app"
-  end
+  app "Quantum Clipboard.app"
 
-  def caveats
-    <<~EOS
-      Quantum Clipboard has been installed.
-
-      To launch:
-        open "#{opt_prefix}/Quantum Clipboard.app"
-
-      Optional (install into /Applications):
-        cp -R "#{opt_prefix}/Quantum Clipboard.app" /Applications/
-    EOS
-  end
+  caveats <<~EOS
+    This app is unsigned and not notarized.
+    On first launch, right-click the app and choose "Open".
+  EOS
 end
