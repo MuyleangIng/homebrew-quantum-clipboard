@@ -1,8 +1,8 @@
 cask "quantum-clipboard" do
-  version "0.1.3"
-  sha256 "09a5035650a940d7faf30ecfb515168ac5b9566c7db248213bc2c1fd81ba292c"
+  version "0.1.4"
+  sha256 "853cc5898610982441ad71ed1c11928bec2265cc7d85068c48d3a97b610cf0a6"
 
-  url "https://github.com/MuyleangIng/Quantum-Clipboard-Copy/releases/download/0.1.3/Quantum-Clipboard.app.zip"
+  url "https://github.com/MuyleangIng/Quantum-Clipboard-Copy/releases/download/0.1.4/Quantum-Clipboard.app.zip"
   name "Quantum Clipboard"
   desc "Open-source clipboard manager for macOS"
   homepage "https://github.com/MuyleangIng/Quantum-Clipboard-Copy"
