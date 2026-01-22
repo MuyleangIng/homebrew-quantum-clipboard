@@ -1,6 +1,6 @@
 cask "quantum-clipboard" do
-  version "0.1.0"
-  sha256 "47360a66817ae3063b1356d4867355997c91c2d2eab325a7ebeb67b188db8735"
+  version "0.1.4"
+  sha256 "853cc5898610982441ad71ed1c11928bec2265cc7d85068c48d3a97b610cf0a6"
 
   url "https://github.com/MuyleangIng/Quantum-Clipboard-Copy/releases/download/#{version}/Quantum-Clipboard.app.zip"
   name "Quantum Clipboard"
